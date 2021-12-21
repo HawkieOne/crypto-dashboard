@@ -16,12 +16,12 @@ export default function Newsfeed() {
             }
         };
 
-        // axios.request(options).then((response)  => {
-        //     console.log(response.data);
-        //     setArticles(response.data);
-        // }).catch((error) => {
-        //     console.error(error);
-        // });
+        axios.request(options).then((response)  => {
+            console.log(response.data);
+            setArticles(response.data);
+        }).catch((error) => {
+            console.error(error);
+        });
     }, [])
 
     console.log(articles);

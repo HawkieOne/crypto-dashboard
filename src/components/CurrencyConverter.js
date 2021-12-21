@@ -28,11 +28,9 @@ export default function CurrencyConverter() {
         };
 
         axios.request(options).then((response)  => {
+            console.log(response.data);
             console.log(response.data["Realtime Currency Exchange Rate"]['5. Exchange Rate']);
-            // setExchangeRate(response.data["Realtime Currency Exchange Rate"]['5. Exchange Rate']);
             setResult(response.data["Realtime Currency Exchange Rate"]['5. Exchange Rate'] * amount)
-            // setPrimaryCurrencyExchanged(chosenPrimaryCurrency);
-            // setSecondaryCurrencyExchanged(chosenSecondaryCurrency);
             setExchangeData({
                 primaryCurrency: chosenPrimaryCurrency,
                 secondaryCurrency: chosenSecondaryCurrency,
@@ -54,12 +52,14 @@ export default function CurrencyConverter() {
                             Primary Currency:
                         </td>
                         <td>
-                            <input
-                                type="number"
-                                name="currency-amount-1"
-                                value={amount}
-                                onChange={(e) => setAmount(e.target.value)}
-                            />
+                            <label>
+                                <input
+                                    type="number"
+                                    name="currency-amount-1"
+                                    value={amount}
+                                    onChange={(e) => setAmount(e.target.value)}
+                                />
+                            </label>
                         </td>
                         <td>
                             <select
@@ -82,12 +82,14 @@ export default function CurrencyConverter() {
                             Secondary Currency:
                         </td>
                         <td>
-                            <input
-                                type="number"
-                                name="currency-amount-2"
-                                value={result}
-                                disabled={true}
-                            />
+                            <label>
+                                <input
+                                    type="number"
+                                    name="currency-amount-2"
+                                    value={result}
+                                    disabled={true}
+                                />
+                            </label>
                         </td>
                         <td>
                             <select

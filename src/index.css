@@ -12,7 +12,7 @@ html, body {
   align-items: center;
   justify-content: center;
   align-items: center;
-  background-color: darkgray;
+  background-color: #222831;
 }
 
 .content {
@@ -30,7 +30,8 @@ html, body {
 }
 
 .currency-converter {
-  background-color: rgb(230, 223, 211);
+  background-color: #393E46;
+  color: #EEEEEE;
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
@@ -40,6 +41,8 @@ html, body {
 
 .exchange-rate {
   background-color: rgb(221, 230, 221);
+  border-radius: 5px;
+  color: #000;
   padding: 20px;
   margin-top: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -47,22 +50,23 @@ html, body {
 
 .input-box {
   background-color: rgb(218, 227, 238);
+  color: #000;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 #convert-button {
-  background-color: coral;
+  background-color: #00ADB5;
   border: none;
   /*float: right;*/
-  /*border-radius: 5px;*/
+  border-radius: 5px;
   margin: 10px;
   padding: 10px;
 }
 
 #convert-button:hover {
-  background-color: rgb(221, 230, 221);
+  /*background-color: #00ADC5;*/
   transform: scale(1.1);
 }
 
