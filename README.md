@@ -19,10 +19,6 @@
 
 A simple web app to convert between different crypto currencies.
 
-* Information about past and future launches
-* Information about astronauts and spacecrafts
-* Information about other events regarding space
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
