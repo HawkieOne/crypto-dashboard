@@ -15,7 +15,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
- <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com)  -->
+<div align="center">
+  <a href="https://hawkie.me"><img alt="Screenshot of app" src="cryptoImage.png" /></a>
+</div>
+
+
 
 A simple web app to convert between different crypto currencies.
 
